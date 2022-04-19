@@ -1,12 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AGAA,UAAU;EACN,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,kBAAkB;EAC1B,GAAG,EAAE,wBAAwB,CAAC,aAAa,EACtC,mBAAmB,CAAC,cAAc,EAClC,kBAAkB,CAAC,kBAAkB,EACrC,0BAA0B,CAAC,aAAa;;;AAE9C,UAAU;EACN,WAAW,EAAE,WAAW;EACxB,GAAG,EAAE,gDAAgD,CAAC,kBAAkB",
-    "sources": [
-        "style.scss",
-        "../sass/_variables.scss",
-        "../sass/_mixins.scss",
-        "../sass/_base.scss"
-    ],
-    "names": [],
-    "file": "style.css"
-}
+{"version":3,"sourceRoot":"","sources":["../sass/base/_font.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACH;;AAKD;EACI;EACA","file":"style.css"}
