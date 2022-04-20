@@ -10,3 +10,11 @@
     font-family: 'shrikhand';
     src: url('../police/shrikhand/Shrikhand-Regular.otf') format('opentype');
 }
+body {
+    max-width: 500px;
+    font-family: 'roboto-regular';
+}
+h1 {
+    font-family: 'shrikhand';
+    text-align: center;
+}

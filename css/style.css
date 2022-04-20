@@ -7,5 +7,34 @@
   font-family: "shrikhand";
   src: url("../police/shrikhand/Shrikhand-Regular.otf") format("opentype");
 }
+body {
+  max-width: 500px;
+  font-family: "roboto-regular";
+}
+
+h1 {
+  font-family: "shrikhand";
+  text-align: center;
+}
+
+.head {
+  text-align: center;
+}
+.head--top {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(228, 228, 228);
+}
+.head--bot {
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 10%;
+}
+.head--bot h2 {
+  margin: 0;
+  padding-top: 10%;
+}
+.head--bot p {
+  color: grey;
+}
 
 /*# sourceMappingURL=style.css.map */
