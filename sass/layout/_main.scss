@@ -3,30 +3,43 @@ main {
 }
 .bloc {
     background-color: rgb(245, 245, 245);
-    padding: 25px 0 0 0;
+    padding: 25px 0;
 
     a {
         text-decoration: none;
         color: black;
     }
 
+    p {
+        margin: 0;
+    }
+
+    h2 {
+        margin-left: 5%;
+    }
+
     &__card {
-        align-content: center;
-       width: 90%;
-       height: 230px;
-       border-radius: 20px;
-       margin: 0;
+        width: 90%;
+        height: 230px;
+        border-radius: 20px;
+        margin: auto;
+        margin-bottom: 5%;
+        box-shadow: 0 5px 10px rgb(230, 230, 230);
+        overflow: hidden;
 
        &--img {
-           margin: 0;
-           height: 60%;
+           height: 70%;
            width: 100%;
            object-fit: cover;
-           overflow: hidden; 
+           overflow: hidden;
        }
+       
        &--text {
+           width: 100%;
+           height: 30%;
            background-color: white;
-           margin: 0;
+           margin-left: 5%;
+           font-size: 15px;
        }
     }
 }
