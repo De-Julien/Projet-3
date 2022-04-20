@@ -1,0 +1,32 @@
+main {
+    margin-top: 10%;
+}
+.bloc {
+    background-color: rgb(245, 245, 245);
+    padding: 25px 0 0 0;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__card {
+        align-content: center;
+       width: 90%;
+       height: 230px;
+       border-radius: 20px;
+       margin: 0;
+
+       &--img {
+           margin: 0;
+           height: 60%;
+           width: 100%;
+           object-fit: cover;
+           overflow: hidden; 
+       }
+       &--text {
+           background-color: white;
+           margin: 0;
+       }
+    }
+}
