@@ -1,0 +1,59 @@
+figure {
+    margin: 0;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.conteneur {
+    width: 100%;
+    background-color: $background;
+    border-radius: 30px 30px 0 0;
+
+    h2 {
+      text-align: center;
+      font-family: 'shrikhand';
+      margin: 0;
+    }
+
+    .btn {
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+
+    &__choix {
+        background-color: white;
+        width: 90%;
+        height: 70px;
+        margin: 5% auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 10px rgb(230, 230, 230);
+
+        &--gras {
+            font-weight: bold;
+            margin: 0 0 0 3%;
+            padding: 3% 0;
+        }
+
+        &--box {
+            display: flex;
+            justify-content: space-between;
+
+            &--prix {
+                font-weight: bold;
+                margin: 0 4% 0 0;
+            }
+        }
+    
+
+        span {
+            font-size: 14px;
+            margin: 0 0 0 3%;
+        }
+    }
+
+    &__categorie {
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+}
