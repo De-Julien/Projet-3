@@ -29,6 +29,22 @@ h3 {
   border: none;
 }
 
+.fa-mobile-screen-button, .fa-list-ul, .fa-store {
+  color: gray;
+  margin: 0 30px;
+}
+
+.fa-location-dot {
+  padding-right: 10px;
+}
+
+.fa-arrow-left {
+  font-size: 25px;
+  color: black;
+  position: absolute;
+  left: 5%;
+}
+
 .head {
   text-align: center;
 }
@@ -36,6 +52,9 @@ h3 {
   display: flex;
   justify-content: center;
   background-color: rgb(228, 228, 228);
+}
+.head--top p {
+  font-weight: bold;
 }
 .head--bot {
   background-color: rgb(240, 240, 240);
@@ -54,14 +73,24 @@ h3 {
 .list h2 {
   margin: 0 0 0 5%;
 }
-.list__notice {
-  text-align: center;
+.list p {
+  font-weight: bold;
+}
+.list span {
+  position: absolute;
+  left: 5%;
+  padding: 5px 10px;
+  background: #9356DC;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
 }
 .list__notice--card {
   background-color: rgb(240, 240, 240);
   border-radius: 20px;
   padding: 10px;
-  margin: 5% 8%;
+  width: 80%;
+  margin: 5% auto;
   box-shadow: 0 5px 5px rgb(228, 228, 228);
 }
 
@@ -103,6 +132,23 @@ main {
   height: 30%;
   background-color: white;
   font-size: 15px;
+  display: flex;
+}
+.bloc__card--text--title {
+  width: 85%;
+  margin: auto;
+}
+.bloc__card--text--title p {
+  margin-top: 2%;
+}
+.bloc__card--text--heart {
+  font-size: 30px;
+  margin: auto;
+}
+
+.fa-utensils, .fa-handshake-angle {
+  font-size: 12px;
+  margin-right: 10px;
 }
 
 .foot {
@@ -121,6 +167,10 @@ main {
   text-decoration: none;
   color: white;
   font-size: 15px;
+}
+
+main {
+  margin: 0;
 }
 
 figure {

@@ -1,3 +1,19 @@
+.fa-mobile-screen-button, .fa-list-ul, .fa-store {
+    color: gray;
+    margin: 0 30px;
+}
+
+.fa-location-dot {
+    padding-right: 10px;
+}
+
+.fa-arrow-left {
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    left: 5%;
+}
+
 .head {
     text-align: center;
 
@@ -5,6 +21,10 @@
         display: flex;
         justify-content: center;
         background-color: rgb(228, 228, 228);
+
+        p {
+            font-weight: bold;
+        }
     }
     
     &--bot {
@@ -28,14 +48,29 @@
        margin: 0 0 0 5%;
    }
 
+   p {
+       font-weight: bold;
+   }
+
+   span {
+    position: absolute;
+    left: 5%;
+    padding: 5px 10px;
+    background: $primaire;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+}
+
    &__notice {
-         text-align: center;
+         
 
          &--card {
              background-color: $background;
              border-radius: 20px;
              padding: 10px;
-             margin: 5% 8%;
+             width: 80%;
+             margin: 5% auto;
              box-shadow: 0 5px 5px rgb(228, 228, 228);       
         }     
     }

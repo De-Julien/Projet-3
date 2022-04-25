@@ -39,6 +39,23 @@ main {
            height: 30%;
            background-color: white;
            font-size: 15px;
+           display: flex;
+
+           &--title {
+               width: 85%;
+               margin:auto;
+
+
+               p{
+                   margin-top: 2%;
+               }
+
+           }
+
+           &--heart {
+                font-size: 30px;
+                margin: auto;
+           }
        }
     }
 }
