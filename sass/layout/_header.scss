@@ -15,68 +15,13 @@
     color: black;
     position: absolute;
     left: 20px;
-
+    top: 5px;
 }
 
-.head {
-    text-align: center;
+header {
+    padding: 1rem;
 
-    &--top {
-        display: flex;
-        justify-content: center;
-        background-color: rgb(228, 228, 228);
-
-        p {
-            font-weight: bold;
-        }
-    }
-    
-    &--bot {
-        background-color: $background;
-        padding: 30px 0;
-
-
-        p {
-            color: grey;
-        }
-
-        h2 {
-            margin: 0;
-        }
-    }
-}
-.list {
-   margin-top: 10%;
-
-   h2 {
-       margin: 0 0 0 5%;
-   }
-
-   p {
-       font-weight: bold;
-   }
-
-   span {
-    position: absolute;
-    left: -10px;
-    padding: 5px 10px;
-    background: $primaire;
-    border-radius: 20px;
-    color: white;
-    font-size: 14px;
-}
-
-   &__notice {
-         
-
-         &--card {
-             position: relative;
-             background-color: $background;
-             border-radius: 20px;
-             padding: 10px;
-             width: 80%;
-             margin: 5% auto;
-             box-shadow: 0 5px 5px rgb(228, 228, 228);       
-        }     
+    .logo {
+        align-items: center;
     }
 }

@@ -14,6 +14,7 @@ body {
 h1 {
   font-family: "shrikhand";
   text-align: center;
+  margin: 0;
 }
 
 h3 {
@@ -46,6 +47,14 @@ h3 {
   color: black;
   position: absolute;
   left: 20px;
+  top: 5px;
+}
+
+header {
+  padding: 1rem;
+}
+header .logo {
+  align-items: center;
 }
 
 .head {
@@ -71,7 +80,7 @@ h3 {
 }
 
 .list {
-  margin-top: 10%;
+  margin-top: 50px;
 }
 .list h2 {
   margin: 0 0 0 5%;
@@ -94,7 +103,7 @@ h3 {
   border-radius: 20px;
   padding: 10px;
   width: 80%;
-  margin: 5% auto;
+  margin: 30px auto;
   box-shadow: 0 5px 5px rgb(228, 228, 228);
 }
 
@@ -113,14 +122,14 @@ main {
 .bloc p {
   margin: 0;
 }
-.bloc h2, .bloc h3, .bloc p {
+.bloc h2, .bloc h4, .bloc p {
   margin-left: 5%;
 }
 .bloc__card {
   width: 90%;
   border-radius: 20px;
   margin: auto;
-  margin-bottom: 5%;
+  margin-bottom: 30px;
   box-shadow: 0 5px 10px rgb(230, 230, 230);
   overflow: hidden;
 }
@@ -131,6 +140,8 @@ main {
 }
 .bloc__card--img img {
   width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 .bloc__card--text {
   width: 100%;
@@ -146,6 +157,11 @@ main {
 .bloc__card--text--title p {
   margin-top: 2%;
 }
+.bloc__card--text--title h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+}
 .bloc__card--text--heart {
   font-size: 30px;
   margin: auto;
@@ -159,7 +175,7 @@ main {
 .foot {
   background-color: rgb(50, 50, 50);
   color: white;
-  padding: 3% 0;
+  padding: 30px 0;
 }
 .foot h3 {
   font-family: "shrikhand";
@@ -176,24 +192,27 @@ main {
 
 main {
   margin: 0;
-  position: relative;
 }
 
 figure {
   margin: 0;
   width: 100%;
   height: 230px;
+  overflow: hidden;
 }
 figure img {
   width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .conteneur {
   padding-top: 15px;
-  position: absolute;
   width: 100%;
   background-color: rgb(240, 240, 240);
   border-radius: 30px 30px 0 0;
+  position: relative;
+  margin-top: -25px;
 }
 .conteneur h2 {
   text-align: center;
@@ -239,6 +258,18 @@ figure img {
 .conteneur__categorie {
   margin-left: 5%;
   margin-top: 40px;
+  font-weight: normal;
+  position: relative;
+  padding-bottom: 10px;
+}
+.conteneur__categorie::after {
+  content: "";
+  background-color: #99E2D0;
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
