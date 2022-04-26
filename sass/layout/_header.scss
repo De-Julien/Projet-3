@@ -6,12 +6,16 @@
 .fa-location-dot {
     padding-right: 10px;
 }
+.arrow {
+    position: relative;
+}
 
 .fa-arrow-left {
     font-size: 25px;
     color: black;
     position: absolute;
-    left: 5%;
+    left: 20px;
+
 }
 
 .head {
@@ -54,7 +58,7 @@
 
    span {
     position: absolute;
-    left: 5%;
+    left: -10px;
     padding: 5px 10px;
     background: $primaire;
     border-radius: 20px;
@@ -66,6 +70,7 @@
          
 
          &--card {
+             position: relative;
              background-color: $background;
              border-radius: 20px;
              padding: 10px;
