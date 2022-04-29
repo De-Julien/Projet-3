@@ -56,7 +56,20 @@
              padding: 10px;
              width: 80%;
              margin: 30px auto;
-             box-shadow: 0 5px 5px rgb(228, 228, 228);       
+             box-shadow: 0 5px 5px rgb(228, 228, 228);
+
+             .fa-mobile-screen-button, .fa-list-ul, .fa-store {
+                color: gray;
+                margin: 0 30px;
+            }
+            
+             &:hover {
+                background-color: #9256dc36;
+
+                .fa-mobile-screen-button, .fa-list-ul, .fa-store {
+                    color: $primaire;
+                }
+             }     
         }     
     }
 }
