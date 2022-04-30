@@ -1,0 +1,52 @@
+@media screen and (min-width: 900px) {  
+    // partie accueil
+    .list {
+     
+        &__notice {
+            display: flex;
+            margin: auto;
+            width: 100%;
+
+            &--card {
+                width: 33%;
+                margin: 30px 12px;
+            }
+        }  
+    }
+    .bloc__zone {
+        align-items: center;
+        justify-content: center;
+
+        &__top, &__bot {
+            display: flex;
+        
+            &__card {
+                width: 47%;
+                margin: 10px auto;
+
+            }          
+        }
+    }
+}
+@media screen and (min-width: 700px) {
+    //footer
+    .foot {
+        text-align: center;
+        
+        
+        h3 {
+            margin-left: 0;
+            }
+
+        p {
+            margin: 0 20px;
+        }
+        
+        &__nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}
