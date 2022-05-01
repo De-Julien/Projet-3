@@ -24,104 +24,114 @@ figure {
     margin-top: -25px;
 
     h2 {
-      text-align: center;
-      font-family: 'shrikhand';
-      margin: 0;
-      
-      .fa-heart {
-          padding-left: 30px;
-      }
+        text-align: center;
+        font-family: 'shrikhand';
+        margin: 0;
+
+        .fa-heart {
+            padding-left: 30px;
+        }
     }
     .commande {
         width: 100%;
         text-align: center;
-
+        
         .btn {
             margin-top: 20px;
             margin-bottom: 40px;
         }
     }
 
-    &__choix {
-        display: flex;
-        background-color: white;
-        width: 90%;
-        margin: 20px auto;
-        border-radius: 15px;
-        box-shadow: 0 5px 10px rgb(230, 230, 230);
-        overflow: hidden;
-        
 
-        h4 {          
-            font-weight: bold;
-            margin: 0 0 0 15px;
-            padding: 10px 0;
-        }
+    &__block {
 
-        &--prix {
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            width: 10%;
-            font-weight: bold;
-            margin: 0 20px 0 0;
-        }
+        &__zone {
 
-        &--box {
-            width: 90%;
-            padding-bottom: 10px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-
-        &--ok {
-            display: flex;
-            align-items: center;
-            margin-right: -63px;
-            background-color: $tertiaire;
-            padding: 0 20px;
-          
-            i {
-                color: $tertiaire;
-                padding: 5px;
-                background-color: white;
-                border-radius: 20px;
-                font-size: 14px;
+            &--categorie {
+                margin-left: 5%;
+                margin-top: 40px;
+                font-weight: normal;
+                position: relative;
+                padding-bottom: 10px;
                 
+                &::after {
+                        content: "";
+                        background-color: $tertiaire;
+                        height: 4px;
+                        width: 50px;
+                        position:absolute;
+                        bottom: 0;
+                        left: 0;
+                }
             }
-        }
 
-        span {
-            font-size: 14px;
-            margin: 0 0 0 15px;
-        }
-    }
+            &__choix {
+                display: flex;
+                background-color: white;
+                width: 90%;
+                margin: 20px auto;
+                border-radius: 15px;
+                box-shadow: 0 5px 10px rgb(230, 230, 230);
+                overflow: hidden;
 
-    &__categorie {
-        margin-left: 5%;
-        margin-top: 40px;
-        font-weight: normal;
-        position: relative;
-        padding-bottom: 10px;
-        
-        &::after {
-                content: "";
-                background-color: $tertiaire;
-                height: 4px;
-                width: 50px;
-                position:absolute;
-                bottom: 0;
-                left: 0;
-            
+                &--prix {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    width: 10%;
+                    font-weight: bold;
+                    margin: 0 20px 0 0;
+                    padding-left: 10px;
+                }
+
+                &--text {
+                    width: 90%;
+                    padding-bottom: 10px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+
+                    span {
+                        font-size: 14px;
+                        margin: 0 0 0 15px;
+                    }
+
+                    h4 {          
+                        font-weight: bold;
+                        margin: 0 0 0 15px;
+                        padding: 10px 0;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+
+                &--ok {
+                    display: flex;
+                    align-items: center;
+                    margin-right: -63px;
+                    background-color: $tertiaire;
+                    padding: 0 20px;
+          
+                    i {
+                        color: $tertiaire;
+                        padding: 5px;
+                        background-color: white;
+                        border-radius: 20px;
+                        font-size: 14px;
+                
+                    }
+                }
+            }
         }
     }
 }
-.conteneur__choix:hover {
-    .conteneur__choix--ok {
+.conteneur__block__zone__choix:hover {
+
+    .conteneur__block__zone__choix--ok {
         margin-right: 0;
         transition: 0.8s;
     }
+
     i {
         transform: rotate(360deg);
         transition: 0.8s;

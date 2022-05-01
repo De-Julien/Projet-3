@@ -27,9 +27,25 @@
             }          
         }
     }
+    //partie restaurant
+    .conteneur {
+        &__block {
+            display: flex;
+            justify-content: space-around;
+
+            &__zone {
+                width: 32%;
+
+                &__choix {
+                    width: 95%;
+                }
+            }
+        }
+    }
+
 }
+        //footer
 @media screen and (min-width: 700px) {
-    //footer
     .foot {
         text-align: center;
         
