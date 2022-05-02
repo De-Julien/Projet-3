@@ -28,8 +28,21 @@ figure {
         font-family: 'shrikhand';
         margin: 0;
 
-        .fa-heart {
+        .far {
             padding-left: 30px;
+        }
+        .fas {
+            margin-left: -23.7px;
+            opacity: 0;
+            background: linear-gradient($primaire, $secondaire,);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            &:hover {
+                opacity: 1;
+                transition: 1s;
+                z-index: 2;
+            }
         }
     }
     .commande {
@@ -42,10 +55,9 @@ figure {
         }
     }
 
-
     &__block {
 
-        &__zone {
+        &__zone1, &__zone2, &__zone3 {
 
             &--categorie {
                 margin-left: 5%;
@@ -73,6 +85,7 @@ figure {
                 border-radius: 15px;
                 box-shadow: 0 5px 10px rgb(230, 230, 230);
                 overflow: hidden;
+                
 
                 &--prix {
                     display: flex;
@@ -123,17 +136,5 @@ figure {
                 }
             }
         }
-    }
-}
-.conteneur__block__zone__choix:hover {
-
-    .conteneur__block__zone__choix--ok {
-        margin-right: 0;
-        transition: 0.8s;
-    }
-
-    i {
-        transform: rotate(360deg);
-        transition: 0.8s;
     }
 }

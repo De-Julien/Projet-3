@@ -1,3 +1,24 @@
+.chargement {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    animation-delay: 5.9s;
+    animation-fill-mode: both;
+    background-color: #FFFFFF80;
+    z-index: 5;
+    
+    &--now {
+        border-top: solid 5px $tertiaire;
+        border-bottom: solid 5px $secondaire;
+        border-radius: 50%;
+        width: 80px;
+        height: 70px;
+    }
+}
+
 .bloc {
     background-color: rgb(245, 245, 245);
     padding: 25px 0;
@@ -81,31 +102,9 @@
                         display: flex;
                         font-size: 30px;
                         margin: auto;
-
-                        .far {
-                            opacity: 1;
-                        }
-
-                        .fas {
-                            margin-left: -30px;
-                            opacity: 0;
-                            color: $primaire;
-                            background: linear-gradient($primaire, $secondaire,);
-                            background-clip: border-box;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                        }
                     }
                 }
             }
         }
     }
-}
-.far:hover {
-    opacity: 0;
-    transition: 2;
-}
-.fas:hover {
-    opacity: 1;
-    transition: 2;
 }
