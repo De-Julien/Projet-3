@@ -21,7 +21,7 @@ h3 {
   margin: 0;
 }
 
-@keyframes pop1 {
+@keyframes pop {
   0% {
     transform: scale(0) rotate(0);
   }
@@ -29,61 +29,23 @@ h3 {
     transform: scale(1) rotate(360deg);
   }
 }
-@keyframes pop2 {
-  0% {
-    transform: scale(0) rotate(0);
-  }
-  30% {
-    transform: scale(0) rotate(0);
-  }
-  100% {
-    transform: scale(1) rotate(360deg);
-  }
-}
-@keyframes pop3 {
-  0% {
-    transform: scale(0) rotate(0);
-  }
-  40% {
-    transform: scale(0) rotate(0);
-  }
-  100% {
-    transform: scale(1) rotate(360deg);
-  }
-}
-.conteneur__block__zone1 {
-  animation: pop1 1s;
+.conteneur__block__zone {
+  animation: pop 1s;
+  transform: scale(0);
+  animation-fill-mode: forwards;
 }
 .conteneur__block__zone2 {
-  animation: pop2 2s;
+  animation-delay: 1s;
 }
 .conteneur__block__zone3 {
-  animation: pop3 3s;
+  animation-delay: 2s;
 }
 
-.conteneur__block__zone1__choix:hover .conteneur__block__zone1__choix--ok {
+.conteneur__block__zone__choix:hover .conteneur__block__zone__choix--ok {
   margin-right: 0;
   transition: 0.8s;
 }
-.conteneur__block__zone1__choix:hover i {
-  transform: rotate(360deg);
-  transition: 0.8s;
-}
-
-.conteneur__block__zone2__choix:hover .conteneur__block__zone2__choix--ok {
-  margin-right: 0;
-  transition: 0.8s;
-}
-.conteneur__block__zone2__choix:hover i {
-  transform: rotate(360deg);
-  transition: 0.8s;
-}
-
-.conteneur__block__zone3__choix:hover .conteneur__block__zone3__choix--ok {
-  margin-right: 0;
-  transition: 0.8s;
-}
-.conteneur__block__zone3__choix:hover i {
+.conteneur__block__zone__choix:hover i {
   transform: rotate(360deg);
   transition: 0.8s;
 }
@@ -408,14 +370,14 @@ figure img {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.conteneur__block__zone1--categorie, .conteneur__block__zone2--categorie, .conteneur__block__zone3--categorie {
+.conteneur__block__zone--categorie {
   margin-left: 5%;
   margin-top: 40px;
   font-weight: normal;
   position: relative;
   padding-bottom: 10px;
 }
-.conteneur__block__zone1--categorie::after, .conteneur__block__zone2--categorie::after, .conteneur__block__zone3--categorie::after {
+.conteneur__block__zone--categorie::after {
   content: "";
   background-color: #99E2D0;
   height: 4px;
@@ -424,7 +386,7 @@ figure img {
   bottom: 0;
   left: 0;
 }
-.conteneur__block__zone1__choix, .conteneur__block__zone2__choix, .conteneur__block__zone3__choix {
+.conteneur__block__zone__choix {
   display: flex;
   background-color: white;
   width: 90%;
@@ -433,7 +395,7 @@ figure img {
   box-shadow: 0 5px 10px rgb(230, 230, 230);
   overflow: hidden;
 }
-.conteneur__block__zone1__choix--prix, .conteneur__block__zone2__choix--prix, .conteneur__block__zone3__choix--prix {
+.conteneur__block__zone__choix--prix {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -442,32 +404,32 @@ figure img {
   margin: 0 20px 0 0;
   padding-left: 10px;
 }
-.conteneur__block__zone1__choix--text, .conteneur__block__zone2__choix--text, .conteneur__block__zone3__choix--text {
+.conteneur__block__zone__choix--text {
   width: 90%;
   padding-bottom: 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.conteneur__block__zone1__choix--text span, .conteneur__block__zone2__choix--text span, .conteneur__block__zone3__choix--text span {
+.conteneur__block__zone__choix--text span {
   font-size: 14px;
   margin: 0 0 0 15px;
 }
-.conteneur__block__zone1__choix--text h4, .conteneur__block__zone2__choix--text h4, .conteneur__block__zone3__choix--text h4 {
+.conteneur__block__zone__choix--text h4 {
   font-weight: bold;
   margin: 0 0 0 15px;
   padding: 10px 0;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.conteneur__block__zone1__choix--ok, .conteneur__block__zone2__choix--ok, .conteneur__block__zone3__choix--ok {
+.conteneur__block__zone__choix--ok {
   display: flex;
   align-items: center;
   margin-right: -63px;
   background-color: #99E2D0;
   padding: 0 20px;
 }
-.conteneur__block__zone1__choix--ok i, .conteneur__block__zone2__choix--ok i, .conteneur__block__zone3__choix--ok i {
+.conteneur__block__zone__choix--ok i {
   color: #99E2D0;
   padding: 5px;
   background-color: white;
@@ -502,10 +464,10 @@ figure img {
     display: flex;
     justify-content: space-around;
   }
-  .conteneur__block__zone1, .conteneur__block__zone2, .conteneur__block__zone3 {
+  .conteneur__block__zone {
     width: 32%;
   }
-  .conteneur__block__zone1__choix, .conteneur__block__zone2__choix, .conteneur__block__zone3__choix {
+  .conteneur__block__zone__choix {
     width: 95%;
   }
 }

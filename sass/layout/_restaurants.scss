@@ -57,7 +57,7 @@ figure {
 
     &__block {
 
-        &__zone1, &__zone2, &__zone3 {
+        &__zone {
 
             &--categorie {
                 margin-left: 5%;
@@ -67,13 +67,13 @@ figure {
                 padding-bottom: 10px;
                 
                 &::after {
-                        content: "";
-                        background-color: $tertiaire;
-                        height: 4px;
-                        width: 50px;
-                        position:absolute;
-                        bottom: 0;
-                        left: 0;
+                    content: "";
+                    background-color: $tertiaire;
+                    height: 4px;
+                    width: 50px;
+                    position:absolute;
+                    bottom: 0;
+                    left: 0;
                 }
             }
 

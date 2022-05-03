@@ -1,5 +1,5 @@
 // animation au début de page entrée/plats/desserts
-@keyframes pop1 {
+@keyframes pop {
     0% {
         transform: scale(0) rotate(0);
     }
@@ -7,46 +7,31 @@
         transform: scale(1) rotate(360deg);
     }
 }
-@keyframes pop2 {
-    0% {
-        transform: scale(0) rotate(0);
-    }
-    30% {
-        transform: scale(0) rotate(0);
-    }
-    100% {
-        transform: scale(1) rotate(360deg);
-    }
-}
-@keyframes pop3 {
-    0% {
-        transform: scale(0) rotate(0);
-    }
-    40% {
-        transform: scale(0) rotate(0);
-    }
-    100% {
-        transform: scale(1) rotate(360deg);
-    }
-}
+
 .conteneur__block {
-    &__zone1 {
-    animation: pop1 1s;
+    
+    &__zone {
+        animation: pop 1s;
+        transform: scale(0);
+        animation-fill-mode: forwards;
     }
 
     &__zone2 {
-        animation: pop2 2s;
+        
+        animation-delay: 1s;
+        
     }
 
     &__zone3 {
-        animation: pop3 3s;
+
+        animation-delay: 2s;
     }
 }
 
 // slide partie verte avec check
-.conteneur__block__zone1__choix:hover {
+.conteneur__block__zone__choix:hover {
 
-    .conteneur__block__zone1__choix--ok {
+    .conteneur__block__zone__choix--ok {
         margin-right: 0;
         transition: 0.8s;
     }
@@ -55,34 +40,14 @@
         transition: 0.8s;
     }
 }
-.conteneur__block__zone2__choix:hover {
 
-    .conteneur__block__zone2__choix--ok {
-        margin-right: 0;
-        transition: 0.8s;
-    }
-    i {
-        transform: rotate(360deg);
-        transition: 0.8s;
-    }
-}
-.conteneur__block__zone3__choix:hover {
-    
-    .conteneur__block__zone3__choix--ok {
-        margin-right: 0;
-        transition: 0.8s;
-    }
-    i {
-        transform: rotate(360deg);
-        transition: 0.8s;
-    }
-}
 
 // les coeurs
 .bloc__zone__top__card--text--heart {
 
     .far {
         opacity: 1;
+
         &:hover {
             opacity: 0;
         }
@@ -95,6 +60,7 @@
         background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
         &:hover {
             opacity: 1;
             transition: 1s;
@@ -107,6 +73,7 @@
 
     .far {
         opacity: 1;
+
         &:hover {
             opacity: 0;
         }
