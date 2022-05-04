@@ -23,10 +23,10 @@ h3 {
 
 @keyframes pop {
   0% {
-    transform: scale(0) rotate(0);
+    transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(360deg);
+    transform: scale(1);
   }
 }
 .conteneur__block__zone {
@@ -67,15 +67,8 @@ h3 {
 .bloc__zone__top__card--text--heart .fas:hover {
   opacity: 1;
   transition: 1s;
-  z-index: 2;
 }
 
-.bloc__zone__bot__card--text--heart .far {
-  opacity: 1;
-}
-.bloc__zone__bot__card--text--heart .far:hover {
-  opacity: 0;
-}
 .bloc__zone__bot__card--text--heart .fas {
   margin-left: -29.7px;
   opacity: 0;
@@ -87,7 +80,6 @@ h3 {
 .bloc__zone__bot__card--text--heart .fas:hover {
   opacity: 1;
   transition: 1s;
-  z-index: 2;
 }
 
 @keyframes charge {
@@ -119,6 +111,12 @@ h3 {
   padding: 15px 20px 15px 20px;
   color: white;
   border: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  transition: 1s;
+}
+.btn:hover {
+  background: linear-gradient(to left top, #9356DC, #FF79DA 50%);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .fa-location-dot {
@@ -191,7 +189,7 @@ header .logo {
   padding: 10px;
   width: 80%;
   margin: 30px auto;
-  box-shadow: 0 5px 5px rgb(228, 228, 228);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 .list__notice--card .fa-mobile-screen-button, .list__notice--card .fa-list-ul, .list__notice--card .fa-store {
   color: gray;

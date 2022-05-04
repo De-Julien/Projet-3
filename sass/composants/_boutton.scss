@@ -5,4 +5,13 @@
     padding: 15px 20px 15px 20px;
     color: white;
     border: none;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 15%);
+    transition: 1s;
+
+    &:hover {
+    
+        background: linear-gradient(to left top, $primaire, $secondaire 50%,);
+        box-shadow: 0 5px 5px rgb(0, 0, 0, 40%)
+        
+    }
 }
